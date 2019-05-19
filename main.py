@@ -26,10 +26,6 @@ def blank_space(string):
     else:
         return False  
 
-#@app.route("/")
-#def mainpage():
-#    return render_template('signup.html')
-
 @app.route("/", methods=['POST', 'GET'])
 def signup():
     if request.method == 'GET':
